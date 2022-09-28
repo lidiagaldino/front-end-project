@@ -1,0 +1,86 @@
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    padding: 3%;
+    height: auto;
+}
+
+.devices{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.586rem;
+    line-height: 67px;
+    color: #353535;
+}
+
+.curso{
+    color: #3347B0;
+    font-weight: 500;
+}
+
+.pcs{
+    width: 70%;
+}
+
+.student{
+    width: 18%;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    padding: 4%;
+}
+
+.cards{
+    background-color: #3347B0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 4rem;
+    box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
+    transition: all ease-in-out .5s;
+}
+
+.cards:hover{
+    background-image: linear-gradient(to right, #3347B0, rgb(112, 93, 238));
+    
+}
+
+.link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icone{
+    width: 100px;
+}
+

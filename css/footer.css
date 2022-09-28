@@ -1,0 +1,46 @@
+footer{
+    height: auto;
+    background-color: #3347B0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+}
+
+footer ul li{
+    color: white;
+}
+
+.contatos{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    gap: 10px;
+}
+
+.copyright{
+    color: white;
+}
+
+.redes{
+    display: flex;
+    gap: 20px;
+}
+
+.redes li{
+    border: 2px solid;
+    border-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

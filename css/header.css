@@ -1,0 +1,47 @@
+header{
+    height: auto;
+    background-color: #3347B0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-left: 10%;
+}
+
+.logo-img{
+    width: 60px;
+    height: 75px;
+}
+
+.nome{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.exit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: white;
+    margin-right: 31px;
+    font-family: 'Roboto';
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.exit-img{
+    width: 48px;
+    height: 43px;
+}
