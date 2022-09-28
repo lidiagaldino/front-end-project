@@ -2,7 +2,7 @@
 
 const getCursos = async () => {
 
-    const url = 'http://localhost:8080/cursos'
+    const url = 'https://senai-api.netlify.app/.netlify/functions/api/cursos'
 
     const response = await fetch(url)
     const listaCursos = await response.json()
@@ -12,7 +12,7 @@ const getCursos = async () => {
 
 const getAlunosStatus = async (status, curso) => {
 
-    const url = `http://localhost:8080/alunos/${status}/${curso}`
+    const url = `https://senai-api.netlify.app/.netlify/functions/api/alunos/${status}/${curso}`
 
     const response = await fetch(url)
     const listaAlunos = await response.json()
@@ -22,7 +22,7 @@ const getAlunosStatus = async (status, curso) => {
 
 const getAlunoMatricula = async (matricula, curso) => {
 
-    const url = `http://localhost:8080/aluno/${matricula}/${curso}`
+    const url = `https://senai-api.netlify.app/.netlify/functions/api/aluno/${matricula}/${curso}`
 
     const response = await fetch(url)
     const aluno = await response.json()
@@ -32,7 +32,7 @@ const getAlunoMatricula = async (matricula, curso) => {
 
 const getAlunosCurso = async (curso) => {
 
-    const url = `http://localhost:8080/alunos/${curso}`
+    const url = `https://senai-api.netlify.app/.netlify/functions/api/alunos/${curso}`
 
     const response = await fetch(url)
     const listaAlunos = await response.json()
@@ -42,7 +42,7 @@ const getAlunosCurso = async (curso) => {
 
 const getAlunoAno = async (ano, curso) => {
 
-    const url = `http://localhost:8080/estudantes/${ano}/${curso}`
+    const url = `https://senai-api.netlify.app/.netlify/functions/api/estudantes/${ano}/${curso}`
 
     const response = await fetch(url)
     const listaAlunos = await response.json()
