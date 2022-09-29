@@ -43,6 +43,7 @@ const createDesempenho = (data) => {
 
     nota.textContent = data.media
     desempenhoBar.style.height = data.media + '%'
+    desempenhoBar.style.setProperty('--height', data.media + '%')
     disciplina.textContent = data.sigla
 
     bar.appendChild(desempenhoBar)

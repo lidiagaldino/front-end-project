@@ -73,6 +73,7 @@ h1{
     gap: 10px;
     width: 100%;
     justify-content: center;
+    animation: zoom 1.5s;
 }
 
 .cards-alunos{
@@ -86,15 +87,18 @@ h1{
     transition: all ease-in-out .5s;
 }
 
-.cards-alunos:hover{
-    box-shadow: 10px 10px rgba(51, 71, 176, 0.5);
-}
-
 .cards-azul{
     background-color: #3347B0;
 }
+.cards-azul:hover{
+    box-shadow: 10px 10px rgba(51, 71, 176, 0.5);
+}
+
 .cards-amarelo{
     background-color: #E5B657;
+}
+.cards-amarelo:hover{
+    box-shadow: 10px 10px rgba(176, 157, 51, 0.5);
 }
 
 .cards-alunos img{
@@ -162,4 +166,13 @@ h1{
 
 .clear{
     cursor: pointer;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

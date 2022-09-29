@@ -62,7 +62,7 @@ h1{
     font-weight: 700;
     font-size: 4rem;
     box-shadow: 12px 12px 4px rgba(51, 71, 176, 0.5);
-    transition: all ease-in-out .5s;
+    transition: all .5s;
 }
 
 .cards:hover{
