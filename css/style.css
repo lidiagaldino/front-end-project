@@ -84,3 +84,20 @@ h1{
     width: 100px;
 }
 
+@media(max-width: 1000px){
+    main{
+        flex-direction: column;
+    }
+    .pcs{
+        display: none;
+    }
+    .student{
+        display: none;
+    }
+    .cards-container{
+        width: 100%;
+    }
+    .cards{
+        height: 200px;
+    }
+}

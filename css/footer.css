@@ -44,3 +44,15 @@ footer ul li{
     align-items: center;
     justify-content: center;
 }
+
+@media(max-width: 1000px){
+    footer{
+        position: inherit;
+    }
+    .copyright{
+        display: none;
+    }
+    .redes{
+        flex-direction: column;
+    }
+}

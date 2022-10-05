@@ -58,6 +58,7 @@ main{
 h1{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -174,5 +175,15 @@ h1{
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@media(max-width: 1400px){
+    h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .ano-container{
+        display: none;
     }
 }
