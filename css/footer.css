@@ -48,11 +48,10 @@ footer ul li{
 @media(max-width: 1000px){
     footer{
         position: inherit;
+        flex-direction: column;
+        gap: 20px;
     }
     .copyright{
         display: none;
-    }
-    .redes{
-        flex-direction: column;
     }
 }
