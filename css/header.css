@@ -45,3 +45,9 @@ header{
     width: 48px;
     height: 43px;
 }
+
+@media(max-width: 100px){
+    .exit-img{
+        display: none;
+    }
+}
