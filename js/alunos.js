@@ -1,6 +1,6 @@
 'use strict'
 
-import { getAlunoAno, getAlunosCurso, getAlunosStatus } from "./functions.js"
+import { getAlunoAno, getAlunosCurso, getAlunosStatus, getAnos } from "./functions.js"
 
 const createAlunos = (dados) =>{
 
@@ -91,12 +91,43 @@ const loadAlunoAno = async (ano) => {
     
 }
 
+const year = (data) => {
+
+    return data.conclusao
+}
+
+const createOption = (ano) => {
+     
+    const option = document.createElement('option')
+    option.value = ano
+    option.textContent = ano
+    option.id = ano
+
+    return option
+}
+
+const loadForm = async () => {
+    const form = document.getElementById('ano-conclusao')
+    const data = await getAnos(localStorage.getItem('curso'))
+
+    const anos = data.map(year)
+    const anosCorrigido = [...new Set(anos)]
+    anosCorrigido.sort((a, b) => a - b)
+
+    const options = anosCorrigido.map(createOption)
+
+    form.replaceChildren(...options)
+}
+
+loadForm()
+
 const form = document.getElementById('ano-conclusao')
 
-form.addEventListener('keydown', (event) => {
-    if (event.key == 'Enter') {
-        loadAlunoAno(form.value)
-    }
+
+
+form.addEventListener('change', () => {
+
+    loadAlunoAno(form.options[form.selectedIndex].text)
 })
 
 document.getElementById('limpar').addEventListener('click', () => {

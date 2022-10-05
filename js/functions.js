@@ -51,9 +51,17 @@ const getAlunoAno = async (ano, curso) => {
         return listaAlunos.alunos
     } else{
         return false
-    }
+    } 
+}
 
-    
+const getAnos = async (curso) => {
+
+    const url = `https://senai-api.netlify.app/.netlify/functions/api/alunos/${curso}`
+
+    const response = await fetch(url)
+    const listaAlunos = await response.json()
+
+    return listaAlunos.alunos
 }
 
 export {
@@ -61,5 +69,6 @@ export {
     getAlunosStatus,
     getCursos,
     getAlunosCurso,
-    getAlunoAno
+    getAlunoAno,
+    getAnos
 }
